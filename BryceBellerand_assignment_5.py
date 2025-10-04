@@ -33,3 +33,17 @@ if prime_number == True:
     print(f"{prime_user} is prime!")
 else:
     print(f"{prime_user} is not prime (divisible by {i})")
+
+    print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication Table:")
+
+# print header row
+print("    ", end="")  # empty top-left corner
+for j in range(1, 11):
+    print(j, end="     ")
+print()
+for i in range(1, 11):
+    print(f"{i}", end="    ")  # row label
+    for j in range(1, 11):
+        print(f"{i*j}", end="    ")
+    print()
